@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>Topic : Input Event in Dom</h1>
+
+    <input type="text" id="search" placeholder="Type text...">
+    <p id="live" style="border:1px solid red;height: 50px; display: inline-block;"></p>
+
+    <script>
+        let search = document.getElementById("search");
+        let live = document.getElementById("live");
+
+        search.addEventListener("input", function () {
+            live.textContent = search.value;
+        });
+
+    </script>
+
+
+</body>
+
+</html>

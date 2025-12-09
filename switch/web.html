@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Simple One‑Page Website</title>
+<meta name="description" content="A clean, responsive one-page website (HTML/CSS/JS)." />
+
+
+<style>
+:root{
+--bg:#0f1724; --card:#0b1220; --muted:#94a3b8; --accent:#06b6d4; --glass:rgba(255,255,255,0.04);
+--radius:14px; --maxw:1100px; --ff:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{margin:0;font-family:var(--ff);background:linear-gradient(180deg,#071022 0%, #071427 100%);color:#e6eef6;line-height:1.5}
+.wrap{max-width:var(--maxw);margin:32px auto;padding:28px}
+
+
+/* Header */
+header{display:flex;align-items:center;justify-content:space-between;padding:12px 20px;border-radius:12px;background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);}
+.brand{display:flex;gap:12px;align-items:center}
+.logo{width:44px;height:44px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#7c3aed);display:flex;align-items:center;justify-content:center;font-weight:700}
+nav{display:flex;gap:16px}
+nav a{color:var(--muted);text-decoration:none;font-weight:600}
+.cta{padding:8px 14px;border-radius:10px;background:linear-gradient(90deg,var(--accent),#7c3aed);color:#021022;text-decoration:none;font-weight:700}
+
+
+/* Hero */
+.hero{display:flex;gap:28px;align-items:center;margin-top:28px}
+.hero-left{flex:1}
+.eyebrow{color:var(--accent);font-weight:700;font-size:13px}
+h1{font-size:36px;margin:10px 0 8px}
+p.lead{color:var(--muted);max-width:56ch}
+.hero-actions{margin-top:18px;display:flex;gap:12px}
+.btn{padding:10px 16px;border-radius:10px;background:var(--glass);border:1px solid rgba(255,255,255,0.03);cursor:pointer;color:inherit}
+
+
+/* Cards */
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-top:26px}
+.card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:16px;border-radius:12px;border:1px solid rgba(255,255,255,0.03)}
+.card h3{margin:8px 0}
+.muted{color:var(--muted);font-size:14px}
+
+
+/* Gallery */
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:18px}
+.gallery img{width:100%;height:120px;object-fit:cover;border-radius:8px}
+
+
+/* Contact */
+form{display:grid;gap:10px;margin-top:18px}
+input,textarea{padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit}
+textarea{min-height:110px}
+
+
+footer{margin-top:28px;padding:18px;border-radius:12px;text-align:center;color:var(--muted)}
+
+
+/* Responsive */
+@media (max-width:760px){
+.hero{flex-direction:column;align-items:flex-start}
+.gallery{grid-template-columns:repeat(2,1fr)}
+}
+
+
+/* small utility */
+.small{font-size:13px;color:var(--muted)}
+.float-right{margin-left:auto}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+<div class="brand">
+<div class="logo">W</div>
+<div>
+<div style="font-weight:800">Website</div>
+<div class="small">Fast • Responsive • Ready</div>
+</div>
+</div>
+
+
+<nav>
+<a href="#features">Features</a>
+<a href="#gallery">Gallery</a>
+<a href="#contact">Contact</a>
+<a class="cta" href="#contact">Get Started</a>
+</nav>
+</header>
+
+
+<section class="hero">
+<div class="hero-left">
+<div class="eyebrow">Launch in minutes</div>
+<h1>A ready-to-use website — copy & paste, publish.</h1>
+<p class="lead">This single file contains everything: layout, styles, and simple JavaScript. Copy into <code>index.html</code> and open in your browser. No build step required.</p>
+
+
+<div class="hero-actions">
+<button class="btn" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Contact Us</button>
+<button class="btn" id="toggleDark" onclick="toggleTheme()">Toggle Theme</button>
+</div>
+
+
+<div class="grid" style="margin-top:20px">

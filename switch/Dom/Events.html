@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Events in Dom</h1>
+    <p>events is action perform by user</p>
+        <h3>MouseEvent</h3>
+    <p id="para1">i am paragraph</p>
+
+    <script>
+       let para =  document.getElementById("para1")
+       para.style.border="1px solid red"
+       para.style.display="inline-block"
+       para.style.cursor = "pointer"
+
+    //    para.addEventListener("click",()=>{
+    //     console.log("hii badka g")
+        
+    //    })
+    //    para.addEventListener("dblclick",function(){
+    //     console.log("hii badka g")
+
+    //    })
+    //    para.addEventListener("mouseover",function(){
+    //     console.log("hii badka g")
+
+    //    })
+       para.addEventListener("mouseout",function(){
+        console.log("hii badka g")
+
+       })
+    </script>
+
+    
+</body>
+</html>

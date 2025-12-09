@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main {
+            border: 1px solid black;
+            height: 400px;
+        }
+
+        .box {
+            width: 200px;
+            height: 400px;
+            background-color: red;
+            animation-name: anim1;
+            
+            
+            animation-duration: 2s;
+            animation-iteration-count: 1;
+            animation-fill-mode: both;
+        }
+
+        @keyframes anim1 {
+            0% {
+                height: 0px;
+            }
+
+            100% {
+                height: 400px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <button onclick="clickanim()">click me</button>
+    <div class="main ">
+
+
+    </div>
+
+    <script>
+        function clickanim() {
+            let anaimationbox = document.querySelector(".main")
+            anaimationbox.classList.add("box")
+
+        }
+        console.log(document.body)
+    </script>
+
+</body>
+
+</html>

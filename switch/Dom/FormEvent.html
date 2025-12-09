@@ -1,0 +1,33 @@
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+
+        </head>
+        <body>
+            <h1>topic: Form Event</h1>
+
+
+            <form id="formId">
+                <input type="text" placeholder="enter your name">
+                <button onclick="fun()">submit</button>
+                <!-- <button type="submit">submit</button> -->
+
+            </form>
+            <p id="paraId" style="border:1px solid red;
+            height: 50px;" >hii</p>
+            
+            <script>
+                function fun(e){
+                    alert("data is submitted")
+                    e.preventDefault()
+                }
+
+                // let formid = document.getElementById("formId")
+                // formid.addEventListener("submit",function(e){
+                //     e.preventDefault()
+                // document.getElementById("paraId").innerHTML = "form is submitted"
+                // })
+
+            </script>
+        </body>
+        </html>

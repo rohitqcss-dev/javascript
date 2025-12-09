@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- <img  title="Old Title"> -->
+    <a >youtube</a>
+
+
+    <script>
+        let img = document.querySelector("a");
+
+        // Change the image src attribute
+        img.setAttribute("href", "https://www.youtube.com/");
+
+        // Read the alt attribute value
+        let altText = img.getAttribute("href");
+        console.log("Alt text:", altText);
+
+        // Remove the title attribute
+        img.removeAttribute("href");
+
+    </script>
+</body>
+
+</html>
