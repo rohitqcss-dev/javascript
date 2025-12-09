@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main {
+            border: 2px solid red;
+            height: 400px;
+            /* color: red; */
+        }
+
+        .rohit {
+            border: 1px solid black;
+            background-color: yellow;
+            height: 400px;
+            animation-name: anm1;
+            animation-duration: 3s;
+        }
+
+        @keyframes anm1 {
+            0% {
+                height: 0px;
+            }
+
+            100% {
+                height: 400px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <button onclick="fun()">click</button>
+
+    <div class="main">my name is rohit</div>
+    <script>
+  
+        function fun() {
+            
+
+            let a = document.querySelector(".main")
+            a.style.color="green";
+           a. classList.toggle("rohit")
+
+        }
+
+
+    </script>
+
+</body>
+
+</html>

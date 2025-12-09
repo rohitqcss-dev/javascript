@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //  today we can create ojects.............
+//    let user={
+//     name:"rohit",
+//     age:66,
+//     weight:70
+
+//    }
+//   document.write(user.age)
+//   document.write(user.name)
+//   document.write(user.weight)
+
+
+// ....................................................................
+// const user={}
+// user.name="rohit",
+// user.age=15,
+// user.weight=73
+
+// document.write(user.name)
+//............................................................
+
+// const user =new Object({
+// name:"rohit",
+// age:89
+
+// })
+// document.write(user.name)
+// ................................................
+
+
+//acess object................................... 
+
+//  const user={
+//     name:"rohit",
+//     age:33,
+//     lastname:"thakurrrrrrrrrr"
+//  }
+// document.write(user.name+user.lastname)
+
+// using function.......................................................
+
+// const user={
+//     name:"rohit",
+//     age:74,
+//     weight:77,
+//     lastname:"thkaurrrrr",
+//     combine:function(){
+//         return this.name+""+this.lastname
+//     }
+// }
+// document.write(user.combine())
+
+
+// with new variable....................................
+
+// const person ={
+//     name:"rohit",
+//     livesin:"chandigsarh",
+//     age:23
+// }
+
+// let a = person.name+person.age+person.livesin
+// document.write(a)
+
+
+
+// constructer function  objects/////////////////////////
+// function fun1(name,age,rollno){
+//     this.name=name
+//     this.age=age
+//     this.rollno=rollno
+// }
+// let user=new fun1("rohit",22,22)
+// document.write(user.name)
+
+
+
+// object constructer........................
+
+// function person(name,age,last){
+//     this.name=name;
+//     this.age=age
+//     this.last=last
+// }
+// let hello=new person("rohit",23,"thakur")
+// let hell=new person("rahul",23,"thakur")
+// document.write("my name is"+hello.name+"my name is"+hell.name)
+
+
+// const user={
+//     name:"rohit",
+//     age:34,
+//     surname:"thakur"
+// }
+// document.write(user.name+ "is"+user.age+"years old")
+
+
+// let user ={
+//     name:"rohit",
+//     age:17
+// }
+// // delete user.age     for delete a key..................
+// user.surname="thakur"
+// document.write(user.surname,"<br>")
+// document.write(user.name+"is"+user.age+"years old")
+
+
+// let user={
+//     name:"rohit",
+//     age:55,
+//     fullname:function(){
+//         return this.name+""+this.age
+//     }
+// }
+// document.write(user.fullname())
+
+// let user={
+//    name:"rohit",
+//     age:55,
+// }
+
+// let avariable=""
+// for(let b in user){
+//     avariable+=user[b]
+// }
+// document.write(avariable)
+
+
+// ..............................................
+
+// let user={
+//     name:"rohit",
+//     age:24,
+//     lastname:"thakur"
+// }
+// let a = JSON.stringify(user)
+// document.write(a)
+
+// .......................................
+
+// let user={
+//     apple:277,
+//     banana:22,
+//     kivi:222
+// }
+// let a =""
+// for([fruit,amount]of Object .entries(user)){
+// a +=fruit+""+amount+"<br>"
+// }
+// document.write(a)
+
+  let num=[1,2,3,4,4,5,6,7,8,9]
+  factorial=[]
+  
+  for(i=0;i<=num.length -1;i++){
+    let fact=1
+    for(j=1;j<=num[i];j++){
+      fact =fact*j
+    }
+    factorial.push(fact)
+  }
+  document.write(factorial)
+
+</script>
+    
+</body>
+</html>

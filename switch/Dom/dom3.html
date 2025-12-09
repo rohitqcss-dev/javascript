@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <p id="demo">hello</p> -->
+<!-- 
+    <p class="item">A</p>
+<p class="item">B</p>
+<p class="item">C</p> -->
+
+<!-- <p>One</p>
+<p>Two</p>
+<p>Three</p> -->
+
+<!-- <p id="helo">hello</p> -->
+
+<!-- <p class="box">A</p>
+<p class="box">B</p>
+<p class="box">C</p> -->
+
+<ul id="list">
+    <li>A</li>
+    <li>B</li>
+    <li>C</li>
+</ul>
+
+
+
+    <script>
+    //   let a=  document.getElementById("demo")
+    //   a.innerText="yooo"
+    //   a.style.color="red"
+
+
+//    a= document.getElementsByClassName("item")
+//    a[0].innerText="hello"
+//    a[1].innerText="hello"
+//    a[2].innerText="hello"
+
+// a=document.getElementsByTagName("p")
+// a[0].innerText="hello"
+// a[2].innerText="hello"
+
+// a=document.querySelector("#helo")
+// a.innerText="heloo"
+
+// a=document.querySelectorAll(".box")
+// a[0].innerText="hlooooo"
+
+
+
+// a=document.createElement("h1")
+// a.innerText="hello"
+// document.body.appendChild(a)
+
+let  list=document.getElementById("list")
+let newitem=document.createElement("li")
+newitem.innerText="hello"
+a=list.children[1]
+list.replaceChild(newitem,a)
+
+
+    </script>
+    
+</body>
+</html>
